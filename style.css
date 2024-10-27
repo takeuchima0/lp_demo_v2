@@ -26,6 +26,11 @@ h2, h3 {
   font-weight: 540;
 }
 
+a, p {
+  position: relative;
+  z-index: 1;
+}
+
 /* common styles */
 section {
   padding-top: 60px;
@@ -113,6 +118,51 @@ header img {
   letter-spacing: 0.1rem;
 }
 
+/* company section */
+.company {
+  background-image: url(./images/house.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.company::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.company h2 {
+  font-size: 3.9rem;
+}
+
+.company p {
+  font-size: 2.5rem;
+  line-height: 3.9rem;
+}
+
+.company-text-last {
+  position: absolute;
+  top: 70%;
+  left: 7%;
+}
+
+.company-info .more a {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.7rem;
+  padding: 0.6rem;
+}
+
+.company-info .more a:hover {
+  color: rgb(71, 173, 187);
+  transform: translateX(1rem);
+}
+
 /* media query: pc */
 @media (max-width: 1000px) {
   .hero h1 {
@@ -150,5 +200,29 @@ header img {
 
   .hero h3 {
     font-size: 2rem;
+  }
+
+  /* company section */
+  .company-info {
+    text-align: center !important;
+    padding: 2rem !important;
+  }
+
+  .conmpany-text-last {
+    position: static;
+    margin-top: 30rem;
+  }
+
+  .company-info h2 {
+    margin-bottom: 4.6rem !important;
+  }
+
+  .company-info p {
+    line-height: 5rem;
+    font-size: 2.2rem;
+  }
+
+  .company-info .more {
+    margin-top: 9rem;
   }
 }
