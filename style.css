@@ -15,19 +15,18 @@ body {
   color: #fff;
 }
 
-/* bootstrap official reference */
-/* .zen-antique-regular {
-  font-family: "Zen Antique", serif;
-  font-weight: 400;
-  font-style: normal;
-} */
-
 html {
   font-size: 62.5%; /* font-size: 10px */
 }
 
+h2, h3 {
+  position: relative;
+  z-index: 1;
+  font-size: 3rem;
+  font-weight: 540;
+}
+
 header {
-  background-color: #000; /* NOTE: 後に削除する */
   padding: 2.7rem 5.4rem;
   text-shadow: #000 1px 3px 6px;
   z-index: 1000;
@@ -41,4 +40,77 @@ header {
 header img {
   width: 3.5rem;
   cursor: pointer;
+}
+
+/* hero section */
+.hero {
+  background-image: url(./images/another-world.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.hero .title {
+  transform: translateY(240px);
+}
+
+.hero h1 {
+  text-shadow: #000 1px 3px 6px;
+  font-size: 7.5rem;
+}
+
+.hero h3 {
+  width: 450px;
+  text-align: right;
+  text-shadow: #000 1px 3px 6px;
+}
+
+/* media query: pc */
+@media (max-width: 1000px) {
+  .hero h1 {
+    font-size: 5rem;
+  }
+
+  .hero h3 {
+    width: 400px;
+    font-size: 3rem;
+  }
+}
+
+/* media query: tablet */
+@media (max-width: 768px) {
+  .hero .title {
+    transform: translateY(-50px);
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 6rem;
+  }
+
+  .hero h3 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* media query: sp */
+@media (max-width: 576px) {
+  html {
+    font-size: 45%;
+  }
+
+  .hero h3 {
+    font-size: 2rem;
+  }
 }
