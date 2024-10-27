@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+
+:root {
+  --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+}
+
+* {
+  transition: all 0.4s ease;
+}
+
+body {
+  font-family: "Zen Antique", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+}
+
+/* bootstrap official reference */
+/* .zen-antique-regular {
+  font-family: "Zen Antique", serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+html {
+  font-size: 62.5%; /* font-size: 10px */
+}
+
+header {
+  background-color: #000; /* NOTE: 後に削除する */
+  padding: 2.7rem 5.4rem;
+  text-shadow: #000 1px 3px 6px;
+  z-index: 1000;
+  position: fixed;
+}
+
+.logo-title {
+  cursor: pointer;
+}
+
+header img {
+  width: 3.5rem;
+  cursor: pointer;
+}
