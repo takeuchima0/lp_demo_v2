@@ -232,6 +232,26 @@ header img {
   font-size: 4rem;
 }
 
+/* footer section */
+footer {
+  padding: 40px;
+  font-size: 2rem;
+}
+
+footer h2 {
+  font-size: 3rem;
+  height: 50%;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:hover {
+  color: aquamarine;
+}
+
 /* media query: pc */
 @media (max-width: 1000px) {
   .hero h1 {
@@ -299,5 +319,10 @@ header img {
   .contact h2 {
     font-size: 4.6rem;
     text-align: center;
+  }
+
+  /* footer section */
+  footer {
+    padding-top: 15px;
   }
 }
