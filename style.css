@@ -163,6 +163,51 @@ header img {
   transform: translateX(1rem);
 }
 
+/* hardware section */
+.hardware-card img {
+  width: 100%;
+  height: 100%;
+}
+
+.hardware-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hardware-card h3 {
+  position: absolute;
+  color: #fff;
+  font-size: 4rem;
+  opacity: 0;
+}
+
+.hardware-card:hover .overlay {
+  background-color: rgb(13, 71, 92);
+  opacity: 0.3;
+}
+
+.hardware-card:hover img {
+  transform: scale(1.1);
+}
+
+.hardware-card .overlay {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.hardware-card:hover h3 {
+  opacity: 1;
+}
+
 /* media query: pc */
 @media (max-width: 1000px) {
   .hero h1 {
