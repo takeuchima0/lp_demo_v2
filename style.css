@@ -208,6 +208,30 @@ header img {
   opacity: 1;
 }
 
+/* contact section */
+.contact {
+  background-image: url(./images/butterfly.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.contact input {
+  height: 4rem;
+  margin-bottom: 2rem;
+}
+
+.contact textarea {
+  width: 70%;
+}
+
+.contact .vision-sight-logo h3 {
+  position: absolute;
+  bottom: 10%;
+  right: 8%;
+  font-size: 4rem;
+}
+
 /* media query: pc */
 @media (max-width: 1000px) {
   .hero h1 {
@@ -269,5 +293,11 @@ header img {
 
   .company-info .more {
     margin-top: 9rem;
+  }
+
+  /* contact section */
+  .contact h2 {
+    font-size: 4.6rem;
+    text-align: center;
   }
 }
